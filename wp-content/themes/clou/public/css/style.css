@@ -12568,16 +12568,13 @@ rect:not(.header .burger__bg) {
   color: #ea5603; /* highlight color */
 }
 .contact-form-container {
-  max-width: 90%;
+  width: 90%;
   margin: 50px auto;
   padding: 30px;
 }
 
-.contact-form-container h2 {
+.contact-form-container h1 {
   text-align: center;
-  font-size: 8rem;
-  color: black;
-  margin-bottom: 10px;
 }
 
 .contact-form-container p {
@@ -12648,6 +12645,10 @@ rect:not(.header .burger__bg) {
 
 /* Responsive adjustments for small screens */
 @media (max-width: 768px) {
+  .contact-form-container {
+    width: 100%;
+  }
+
   .contact-form .form-row {
     flex-direction: column;
   }
