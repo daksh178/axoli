@@ -245,6 +245,7 @@
       </div>
     </div>
     <header
+    style="background-color: rgb(27 25 24);"
       class="header fixed z-50 top left w-1/1 d-none pointer-events-none | js-header"
     >
       <div
@@ -258,7 +259,7 @@
               data-cursor="link"
               data-cursor-leave="onLinksLeave"
             >
-           <svg
+           <!-- <svg
               class="header__logo d-block | js-header:logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 800 200"
@@ -274,8 +275,10 @@
               >
                 <tspan fill="#EA5603">A</tspan><tspan fill="black">XOL</tspan><tspan fill="#EA5603">I</tspan>
               </text>
-            </svg>
-
+            </svg> -->
+            <div class="logo-axoli">
+              <img src="wp-content/uploads/axoli/Axoli Logo.png" />
+            </div>
               <svg
               style="display: none;"
                 class="header__logo d-block | js-header:logo"
@@ -328,23 +331,47 @@
               <li class="nav__item relative mr-1 | js-nav-item">
                 <a
                   href="/"
+                  style="color: white;"
                   class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate active | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
                   data-cursor-leave="onLinksLeave"
                 >
-                  Collection
+                  Home
                   <span
                     class="link__underline | js-header-link-underline"
                   ></span>
                 </a>
               </li>
+
+              <div
+              style="color: white;"
+                  class="button overflow-hidden mr-1 | js-button js-filter-projects"
+                >
+                  Collection
+
+                  <span class="button__text">
+                    <span class="js-clip-text" style="display: none;">Filter Projects +</span>
+                    <span
+                      class="button__underline | js-button:underline js-clip-underline"
+                    ></span>
+                  </span> 
+                  <span class="button__wipe d-block bg-black | js-button:clipBlock">
+                    <span
+                    style="display: none;"
+                      class="button__wipe__text t-white d-block | js-button:clipText"
+                      >Filter Projects +</span
+                    >
+                  </span>
+                </div>
+              
               <li
                 class="nav__item relative mr-1 nav__item--dropdown | js-nav-item"
               >
                 <a
                   href="/projects/index.html"
+                  style="color: white;"
                   class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
@@ -422,6 +449,7 @@
               <li class="nav__item relative | js-nav-item">
                 <a
                   href="/contact/index.html"
+                  style="color: white;"
                   class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
@@ -434,6 +462,7 @@
                   ></span>
                 </a>
               </li>
+              
             </ul>
           </nav>
         </div>
@@ -441,8 +470,8 @@
           class="d-none d-block@sm d-none@touch pointer-events-auto header__lang | js-header-lang"
         >
          <a
-             href="/"
-             style="margin-right: 10px;"
+            href="/"
+            style="margin-right: 10px; color: white;"
             class="link link--menu d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
             data-header-link
             data-cursor="link"
@@ -453,7 +482,8 @@
           </a>      
 
           <a
-             href="/"
+            href="/"
+            style="color: white;"
             class="link link--menu d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
             data-header-link
             data-cursor="link"
@@ -537,12 +567,13 @@
                         data-cursor="link"
                         data-cursor-leave="onLinksLeave"
                       >
-                        Collection
+                        Home
                         <span
                           class="link__underline link__underline--white | js-header-link-underline"
                         ></span>
                       </a>
                     </li>
+                    
                     <li role="none" class="mt-0.5">
                       <a
                        href="/projects/index.html"
@@ -852,11 +883,11 @@
       <div
         class="d-flex items-center justify-between mb-2 pointer-events-auto px-0.5 px-1@sm px-1.5@md pb-1 projects-header | js-projects-header"
       >
-        <div class="d-flex items-center">
+        <!-- <div class="d-flex items-center">
           <div
             class="button overflow-hidden t-700 | js-button js-filter-projects"
           >
-            <!-- <span class="button__text">
+            <span class="button__text">
               <span class="js-clip-text">Filter Projects +</span>
               <span
                 class="button__underline | js-button:underline js-clip-underline"
@@ -867,14 +898,14 @@
                 class="button__wipe__text t-white d-block | js-button:clipText"
                 >Filter Projects +</span
               >
-            </span> -->
+            </span>
           </div>
           <div class="button ml-1">
             <span class="button__text d-none | js-clear-filters">
               <span class="js-clip-text">Clear all</span>
             </span>
           </div>
-        </div>
+        </div> -->
         <div
           class="button overflow-hidden t-700 | js-button js-switch-view"
           data-current-view="ring"
@@ -904,7 +935,7 @@
             class="container-fluid overflow-hidden"
           >
             <main>
-              <div
+               <!-- <div
                 class="projects-grid grid gap-0 | js-projects-grid"
                 style="visibility: hidden; opacity: 0; height: 0"
               >
@@ -2685,7 +2716,7 @@
                     >Changchun Super Garden Masterplan</span
                   >
                 </a>
-              </div>
+              </div>  -->
             </main>
           </div>
         </div>
@@ -2731,9 +2762,9 @@
       <div class="projects-grid-filter__menu | js-project-filters:menu">
         <div class="projects-grid-filter__menu__header">
           <h2 class="mb-1">
-            Filter Projects
-            <span class="t-16 t-24@md t-ls-1 | js-project-filters:count"
-              >(119)</span
+            Our Collection
+            <span style="display: none;" class="t-16 t-24@md t-ls-1 | js-project-filters:count"
+              ></span
             >
           </h2>
           <div
@@ -2781,7 +2812,7 @@
                   <h3
                     class="w-1/1 w-2/3@sm w-1/2@md mb-0 overflow-hidden | js-accordion-role"
                   >
-                    <span class="js-clip-text">Programme</span>
+                    <span class="js-clip-text">Collection by Name</span>
                   </h3>
                   <svg
                     aria-hidden="true"
@@ -2793,13 +2824,13 @@
                   </svg>
                 </div>
                 <div
-                  class="accordion__cover py-1 px-0.5 p-1@sm t-left d-flex flex-row overflow-hidden | js-filters-toggle:cover"
+                  class="cust-accordion__cover py-1 px-0.5 p-1@sm t-left d-flex flex-row overflow-hidden | js-filters-toggle:cover"
                 >
                   <div
                     class="accordion__cover__inner h-1/1 d-flex flex-column flex-row@sm items-center@sm flex-grow | js-filters-toggle:coverInner"
                   >
                     <h3 class="w-1/1 w-2/3@sm w-1/2@md mb-0 overflow-hidden">
-                      Programme
+                      Collection by Name
                     </h3>
                     <svg
                       aria-hidden="true"
@@ -2817,7 +2848,7 @@
               <div class="p-1 p-2@sm d-flex flex-column items-end">
                 <div class="w-1/1">
                   <div class="grid w-1/1 w-4/6@sm">
-                    <label
+                    <!-- <label
                       for="sector-all"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
@@ -2831,134 +2862,184 @@
                       />
                       <span class="form-checkbox__box"></span>
                       All
-                    </label>
-                    <label
-                      for="sector-Cultural"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Cultural"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Cultural"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Cultural
-                    </label>
-                    <!-- <label
-                      for="sector-Education"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Education"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Daksh"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Daksh
                     </label> -->
                     <label
                       for="sector-High-Rise"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-High-Rise"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="High-Rise"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      High-Rise
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="wp-content/uploads/axoli/K-Nimohay Raghav-Preview-01.jpg"/>
+                      </span>
+                      K - NIMOHAY RAGHAV
+                    </label>
+                    <label
+                      for="sector-High-Rise"
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
+                    >
+                      <!-- <input
+                        id="sector-High-Rise"
+                        type="checkbox"
+                        class="js-project-filters:checkbox"
+                        value="High-Rise"
+                        data-filter-type="sector"
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 01.jpg"/>
+                      </span>
+                      K - NIMOHAY ISHVARA
+                    </label>
+                    <label
+                      for="sector-High-Rise"
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
+                    >
+                      <!-- <input
+                        id="sector-High-Rise"
+                        type="checkbox"
+                        class="js-project-filters:checkbox"
+                        value="High-Rise"
+                        data-filter-type="sector"
+                      /> -->
+                      <span class="form-checkbox__box">
+                         <img src="wp-content/uploads/axoli/R-ANGIRA RAGHAV - Preview 01.jpg"/>
+                      </span>
+                      R - ANGIRA RAGHAV
+                    </label>
+                    <label
+                      for="sector-Cultural"
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
+                    >
+                      <!-- <input
+                        id="sector-Cultural"
+                        type="checkbox"
+                        class="js-project-filters:checkbox"
+                        value="Cultural"
+                        data-filter-type="sector"
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-1.png"/>
+                      </span>
+                      SUBWAY
+                    </label>                    
+                    <label
+                      for="sector-High-Rise"
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
+                    >
+                      <!-- <input
+                        id="sector-High-Rise"
+                        type="checkbox"
+                        class="js-project-filters:checkbox"
+                        value="High-Rise"
+                        data-filter-type="sector"
+                      /> -->
+                      <span class="form-checkbox__box">
+                         <img src="/wp-content/uploads/axoli/manf-img-2.png"/>
+                      </span>
+                      MORROCON
                     </label>
                     <label
                       for="sector-Hospitality"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-Hospitality"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Hospitality"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Hospitality
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-3.png"/>
+                      </span>
+                      ELEVATION
                     </label>
                     <label
                       for="sector-Leisure"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-Leisure"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Leisure"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Leisure
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-5.png"/>
+                      </span>
+                      KITCHEN
                     </label>
                     <label
                       for="sector-Mixed-Use"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-Mixed-Use"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Mixed-Use"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Mixed-Use
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-6.png"/>
+                      </span>
+                      TEMPLE
                     </label>
                     <label
                       for="sector-Office"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-Office"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Office"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Office
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-7.png"/>
+                      </span>
+                      CONCEPT
                     </label>
                     <label
                       for="sector-Outdoor Retail"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-Outdoor Retail"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Outdoor Retail"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Outdoor Retail
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-9.png"/>
+                      </span>
+                    DAY-NIGHT
                     </label>
                     <label
                       for="sector-Renovation"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="sector-Renovation"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Renovation"
                         data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Renovation
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-10.png"/>
+                      </span>
+                      BATHROOM
                     </label>
-                    <label
+                    <!-- <label
                       for="sector-Residential"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
@@ -3041,7 +3122,7 @@
                       />
                       <span class="form-checkbox__box"></span>
                       Transport
-                    </label>
+                    </label> -->
                   </div>
                 </div>
               </div>
@@ -3054,6 +3135,7 @@
             <button
               class="accordion w-1/1 p-0 | js-filters-toggle"
               aria-controls="accordion-scope"
+              aria-expanded="true"
             >
               <div
                 class="relative py-1 px-0.5 p-1@sm t-left d-flex flex-row overflow-hidden"
@@ -3064,7 +3146,7 @@
                   <h3
                     class="w-1/1 w-2/3@sm w-1/2@md mb-0 overflow-hidden | js-accordion-role"
                   >
-                    <span class="js-clip-text">Scope</span>
+                    <span class="js-clip-text">Collection by Size</span>
                   </h3>
                   <svg
                     aria-hidden="true"
@@ -3076,13 +3158,13 @@
                   </svg>
                 </div>
                 <div
-                  class="accordion__cover py-1 px-0.5 p-1@sm t-left d-flex flex-row overflow-hidden | js-filters-toggle:cover"
+                  class="cust-accordion__cover py-1 px-0.5 p-1@sm t-left d-flex flex-row overflow-hidden | js-filters-toggle:cover"
                 >
                   <div
                     class="accordion__cover__inner h-1/1 d-flex flex-column flex-row@sm items-center@sm flex-grow | js-filters-toggle:coverInner"
                   >
                     <h3 class="w-1/1 w-2/3@sm w-1/2@md mb-0 overflow-hidden">
-                      Scope
+                      Collection by Size
                     </h3>
                     <svg
                       aria-hidden="true"
@@ -3100,7 +3182,7 @@
               <div class="p-1 p-2@sm d-flex flex-column items-end">
                 <div class="w-1/1">
                   <div class="grid w-1/1 w-4/6@sm">
-                    <label
+                    <!-- <label
                       for="scope-all"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
@@ -3114,50 +3196,56 @@
                       />
                       <span class="form-checkbox__box"></span>
                       All
-                    </label>
+                    </label> -->
                     <label
                       for="scope-Architecture"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="scope-Architecture"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Architecture"
                         data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Architecture
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-11.png"/>
+                      </span>
+                      30x30
                     </label>
                     <label
                       for="scope-Façade"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="scope-Façade"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Façade"
                         data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Façade
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-12.png"/>
+                      </span>
+                      30x45
                     </label>
                     <label
                       for="scope-Interiors"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
-                      <input
+                      <!-- <input
                         id="scope-Interiors"
                         type="checkbox"
                         class="js-project-filters:checkbox"
                         value="Interiors"
                         data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Interiors
+                      /> -->
+                      <span class="form-checkbox__box">
+                        <img src="/wp-content/uploads/axoli/manf-img-13.png"/>
+                      </span>
+                      30x60
                     </label>
-                    <label
+                    <!-- <label
                       for="scope-Landscape"
                       class="form-checkbox mb-1 w-1/2 w-1/3@sm"
                     >
@@ -3212,7 +3300,7 @@
                       />
                       <span class="form-checkbox__box"></span>
                       Wayfinding
-                    </label>
+                    </label> -->
                   </div>
                 </div>
               </div>
@@ -3221,7 +3309,7 @@
               <div></div>
             </div>
           </div>
-          <div>
+          <!-- <div>
             <button
               class="accordion w-1/1 p-0 | js-filters-toggle"
               aria-controls="accordion-status"
@@ -3349,8 +3437,8 @@
             <div class="divider relative overflow-hidden | js-divider">
               <div></div>
             </div>
-          </div>
-          <div>
+          </div> -->
+          <!-- <div>
             <button
               class="accordion w-1/1 p-0 | js-filters-toggle"
               aria-controls="accordion-scale"
@@ -3478,8 +3566,8 @@
             <div class="divider relative overflow-hidden | js-divider">
               <div></div>
             </div>
-          </div>
-          <div>
+          </div> -->
+          <!-- <div>
             <button
               class="accordion w-1/1 p-0 | js-filters-toggle"
               aria-controls="accordion-year"
@@ -3817,7 +3905,7 @@
             <div class="divider relative overflow-hidden | js-divider">
               <div></div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -3826,10 +3914,10 @@
         planesData: {
           12912: {
             planeId: 12912,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-1.png",
-            permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K-Nimohay Raghav-Preview-01.jpg",
+            permalink: "/project\/K-NIMOHAY-RAGHAV\/",
           },
           14307: {
             planeId: 14307,
@@ -3849,8 +3937,8 @@
             planeId: 2549,
             title: "Parking Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-5.png",
-            permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 01.jpg",
+            permalink: "/project\/K-NIMOHAY-ISHVARA\/",
           },
           487: {
             planeId: 487,
@@ -3863,8 +3951,8 @@
             planeId: 2542,
             title: "Outdoor/Deck Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-7.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K- Nimohay-Raghav-Preview-02.jpg",
+           permalink: "/project\/K-NIMOHAY-RAGHAV\/",
           },
           2545: {
             planeId: 2545,
@@ -3884,8 +3972,8 @@
             planeId: 2512,
             title: "Porcelain Tiles",
            imgUrl:
-              "wp-content/uploads/axoli/manf-img-11.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K- Nimohay Raghav - Preview 03.jpg",
+           permalink: "/project\/K-NIMOHAY-RAGHAV\/",
           },
           2517: {
             planeId: 2517,
@@ -3905,8 +3993,8 @@
             planeId: 15476,
             title: "Double Charge Vitrified Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-13.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 02.jpg",
+           permalink: "/project\/K-NIMOHAY-ISHVARA\/",
           },
           14282: {
             planeId: 14282,
@@ -3981,7 +4069,7 @@
           },
           13840: {
             planeId: 13840,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-10.png",
            permalink: "/project\/axoli\/",
@@ -3997,8 +4085,8 @@
             planeId: 2551,
             title: "Mosaic Tiles",
            imgUrl:
-              "wp-content/uploads/axoli/manf-img-12.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K-Nimohay Raghav_R2.jpg",
+           permalink: "/project\/K-NIMOHAY-RAGHAV\/",
           },
           2561: {
             planeId: 2561,
@@ -4060,15 +4148,15 @@
             planeId: 14306,
             title: "Outdoor/Deck Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-12.png",
+              "wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 02.jpg",
            permalink: "/project\/axoli\/",
           },
           14305: {
             planeId: 14305,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY ISHVARA Tiles",
         imgUrl:
-              "wp-content/uploads/axoli/manf-img-2.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 03.jpg",
+           permalink: "/project\/K-NIMOHAY-ISHVARA\/",
           },
           14391: {
             planeId: 14391,
@@ -4081,7 +4169,7 @@
             planeId: 2531,
             title: "Vitrified Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-11.png",
+              "wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 03.jpg",
            permalink: "/project\/axoli\/",
           },
           2576: {
@@ -4095,7 +4183,7 @@
             planeId: 15133,
             title: "Floor Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-9.png",
+              "wp-content/uploads/axoli/K-Nimohay Ishvaraa_R1.jpg",
            permalink: "/project\/axoli\/",
           },
           15166: {
@@ -4142,7 +4230,7 @@
           },
           2559: {
             planeId: 2559,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-10.png",
            permalink: "/project\/axoli\/",
@@ -4172,19 +4260,19 @@
             planeId: 15067,
             title: "Porcelain Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-3.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/K-Nimohay Ishvaraa_R1.jpg",
+           permalink: "/project\/K-NIMOHAY-ISHVARA\/",
           },
           15032: {
             planeId: 15032,
             title: "Double Charge Vitrified Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-5.png",
+              "wp-content/uploads/axoli/manf-img-2.png",
            permalink: "/project\/axoli\/",
           },
           2575: {
             planeId: 2575,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-9.png",
            permalink: "/project\/axoli\/",
@@ -4193,8 +4281,8 @@
             planeId: 2529,
             title: "Digital Wall Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-13.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/R-ANGIRA RAGHAV - Preview 01.jpg",
+           permalink: "/project\/R-ANGIRA-RAGHAV\/",
           },
           2555: {
             planeId: 2555,
@@ -4221,8 +4309,8 @@
             planeId: 2560,
             title: "Vitrified Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-3.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/R-ANGIRA RAGHAV - Preview 02.jpg",
+           permalink: "/project\/R-ANGIRA-RAGHAV\/",
           },
           2558: {
             planeId: 2558,
@@ -4235,15 +4323,15 @@
             planeId: 2556,
             title: "Double Charge Vitrified Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-2.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/R-ANGIRA RAGHAV - Preview 03.jpg",
+           permalink: "/project\/R-ANGIRA-RAGHAV\/",
           },
           2548: {
             planeId: 2548,
             title: "Digital Wall Tiles",
             imgUrl:
-              "wp-content/uploads/axoli/manf-img-12.png",
-           permalink: "/project\/axoli\/",
+              "wp-content/uploads/axoli/ANGIRA RAGHAV_R1.jpg",
+           permalink: "/project\/R-ANGIRA-RAGHAV\/",
           },
           2541: {
             planeId: 2541,
@@ -4289,7 +4377,7 @@
           },
           2530: {
             planeId: 2530,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-2.png",
            permalink: "/project\/axoli\/",
@@ -4368,7 +4456,7 @@
           },
           14284: {
             planeId: 14284,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-3.png",
            permalink: "/project\/axoli\/",
@@ -4403,7 +4491,7 @@
           },
           14983: {
             planeId: 14983,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
            imgUrl:
               "wp-content/uploads/axoli/manf-img-5.png",
            permalink: "/project\/axoli\/",
@@ -4536,7 +4624,7 @@
           },
           14388: {
             planeId: 14388,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-1.png",
            permalink: "/project\/axoli\/",
@@ -4557,7 +4645,7 @@
           },
           1562: {
             planeId: 1562,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
             imgUrl:
               "wp-content/uploads/axoli/manf-img-9.png",
            permalink: "/project\/axoli\/",
@@ -4592,7 +4680,7 @@
           },
           2505: {
             planeId: 2505,
-            title: "Subway Tiles",
+            title: "K - NIMOHAY RAGHAV Tiles",
            imgUrl:
               "wp-content/uploads/axoli/manf-img-7.png",
            permalink: "/project\/axoli\/",
@@ -4662,18 +4750,18 @@
           },
         },
         sector: {
-          "SUBWAY": [
-            12912, 2542, 2512, 2551, 14306, 2531, 15133, 15067, 15032, 2529,
-            2555, 2560, 2556, 2548, 15013, 2011, 2525, 14896, 1768, 2527, 2518,
-            1093, 2513, 14780, 2569, 1562, 14802, 2505, 2502, 14669, 2503,
+          "K - NIMOHAY RAGHAV": [
+            12912, 2542, 2512, 2551,
           ],
-          "MORROCON": [
-            2549, 15476, 14305, 15067, 2572, 14896, 14883, 14389, 2516, 14780,
-            14388, 14801, 14387,
+          "K - NIMOHAY ISHVARA": [
+            2549, 15476, 14305, 15067, 
+            // 2572, 14896, 14883, 14389, 2516, 14780,
+            // 14388, 14801, 14387,
           ],
-          "ELEVATION": [
-            2512, 2529, 2560, 2556, 2548, 15013, 2011, 2527, 1093, 14780, 2569,
-            1562, 2506, 2505, 2502, 14669, 2503, 14491,
+          "R - ANGIRA RAGHAV": [
+             2529, 2560, 2556,2548,
+            //   15013, 2011, 2527, 1093, 14780, 2569,
+            // 1562, 2506, 2505, 2502, 14669, 2503, 14491,
           ],
           "KITCHEN": [
             2512, 15398, 13840, 2531, 2556, 2524, 2011, 2547, 2544, 14984, 2527,
@@ -4856,7 +4944,7 @@
             <figure class="image" style="padding-bottom: 53.5714%">
               <div class="image__inner">
                 <div class="image__img">
-                  <img src="/projects.1.html" alt />
+                  <img src="#" alt />
                 </div>
               </div>
             </figure>
@@ -4867,7 +4955,7 @@
           <div class="project-preview__btn">
             <a
               class="button t-700 js-project-preview-link overflow-hidden | js-button"
-              href="/"
+              href="/index.html"
               data-cursor="link"
               data-cursor-leave="onLinksLeave"
             >
