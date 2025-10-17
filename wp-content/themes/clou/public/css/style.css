@@ -663,6 +663,7 @@ a {
 }
 .header {
   height: 4rem;
+  background-color: rgb(27 25 24);
 }
 @media (min-width: 768px) {
   .header {
