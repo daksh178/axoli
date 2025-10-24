@@ -54955,35 +54955,28 @@
   r = i.O(r);
 })();
 
-// open dialogbox in individual page
-function initPopups() {
-  document.addEventListener("click", (e) => {
-    const openBtn = e.target.closest(".open-popup");
-    if (openBtn) {
-      const popupId = openBtn.getAttribute("data-popup") + "-popup";
-      const popup = document.getElementById(popupId);
-      if (popup) popup.style.display = "flex";
-    }
+// Attach click handler once globally
+document.addEventListener("click", (e) => {
+  // OPEN popup
+  const openBtn = e.target.closest(".open-popup");
+  if (openBtn) {
+    const popupId = openBtn.getAttribute("data-popup") + "-popup";
+    const popup = document.getElementById(popupId);
+    if (popup) popup.style.display = "flex";
+  }
 
-    const closeBtn = e.target.closest(".close-btn");
-    if (closeBtn) {
-      const popup = closeBtn.closest(".popup");
-      if (popup) popup.style.display = "none";
-    }
+  // CLOSE popup
+  const closeBtn = e.target.closest(".close-btn");
+  if (closeBtn) {
+    const popup = closeBtn.closest(".popup");
+    if (popup) popup.style.display = "none";
+  }
 
-    document.querySelectorAll(".popup").forEach((popup) => {
-      if (e.target === popup) popup.style.display = "none";
-    });
+  // CLOSE by clicking outside
+  document.querySelectorAll(".popup").forEach((popup) => {
+    if (e.target === popup) popup.style.display = "none";
   });
-}
-
-// Run on normal load
-document.addEventListener("DOMContentLoaded", initPopups);
-
-// ✅ Re-run if AJAX or theme loads content dynamically
-document.addEventListener("page:loaded", initPopups);
-document.addEventListener("content:loaded", initPopups);
-document.addEventListener("ajaxComplete", initPopups);
+});
 
 // document.addEventListener("click", function (e) {
 //   const link = e.target.closest("a");
