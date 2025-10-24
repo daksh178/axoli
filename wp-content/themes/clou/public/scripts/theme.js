@@ -40420,6 +40420,7 @@
                 ".projects-grid-filter__selected-filter",
                 this.removeSelectedFilter
               );
+            T.on("click", ".js-project-label", () => this.close());
           }
           destroy() {
             T.off("click", ".js-filter-projects", this.open),
@@ -40436,6 +40437,7 @@
                 ".projects-grid-filter__selected-filter",
                 this.removeSelectedFilter
               );
+            T.off("click", ".js-project-label");
           }
         }
         function Fb(t, e, n) {
@@ -54952,3 +54954,90 @@
   });
   r = i.O(r);
 })();
+
+// open dialogbox in individual page
+function initPopups() {
+  document.addEventListener("click", (e) => {
+    const openBtn = e.target.closest(".open-popup");
+    if (openBtn) {
+      const popupId = openBtn.getAttribute("data-popup") + "-popup";
+      const popup = document.getElementById(popupId);
+      if (popup) popup.style.display = "flex";
+    }
+
+    const closeBtn = e.target.closest(".close-btn");
+    if (closeBtn) {
+      const popup = closeBtn.closest(".popup");
+      if (popup) popup.style.display = "none";
+    }
+
+    document.querySelectorAll(".popup").forEach((popup) => {
+      if (e.target === popup) popup.style.display = "none";
+    });
+  });
+}
+
+// Run on normal load
+document.addEventListener("DOMContentLoaded", initPopups);
+
+// ✅ Re-run if AJAX or theme loads content dynamically
+document.addEventListener("page:loaded", initPopups);
+document.addEventListener("content:loaded", initPopups);
+document.addEventListener("ajaxComplete", initPopups);
+
+// document.addEventListener("click", function (e) {
+//   const link = e.target.closest("a");
+//   if (link && link.href && !link.href.startsWith("#")) {
+//     // force full page reload instead of ajax navigation
+//     window.location.href = link.href;
+//     e.preventDefault();
+//   }
+// });
+
+// const label = document.querySelector(
+//   'div[data-category="K - NIMOHAY RAGHAV"]'
+// );
+
+// if (label) {
+//   const event = new Event("click", { bubbles: true });
+//   label.dispatchEvent(event);
+//   console.log("✅ Custom click event dispatched");
+// }
+
+// const label = document.querySelector('div[data-category="K - NIMOHAY RAGHAV"]');
+// if (label) {
+//   const event = new Event("click", { bubbles: true });
+//   label.dispatchEvent(event);
+//   console.log("✅ Custom click event dispatched");
+// }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const labels = document.querySelectorAll(
+    "#accordion-sector label[data-category], #accordion-scope label[data-category]"
+  );
+
+  labels.forEach((label) => {
+    label.addEventListener("click", () => {
+      const category = label.getAttribute("data-category");
+      console.log("Clicked category:", category);
+
+      const targetDiv = document.querySelector(
+        `div[data-category="${category}"]`
+      );
+      if (targetDiv) {
+        const event = new Event("click", { bubbles: true });
+        targetDiv.dispatchEvent(event);
+      }
+
+      const accordion = document.getElementById("accordion-sector");
+      if (accordion && accordion.classList.contains("d-none")) {
+        accordion.classList.remove("d-none");
+      }
+
+      const accordionScope = document.getElementById("accordion-scope");
+      if (accordionScope && accordionScope.classList.contains("d-none")) {
+        accordionScope.classList.remove("d-none");
+      }
+    });
+  });
+});

@@ -248,7 +248,7 @@
       class="header fixed z-50 top left w-1/1 d-none pointer-events-none | js-header"
     >
       <div
-        class="header__inner bg-white d-flex justify-between items-center h-1/1 w-1/1 px-0.5 px-1@sm px-1.5@md"
+        class="header__inner d-flex justify-between items-center h-1/1 w-1/1 px-0.5 px-1@sm px-1.5@md"
       >
         <div class="d-flex items-center pointer-events-auto">
           <div>
@@ -331,7 +331,7 @@
                 <a
                   href="/"
                   style="color: white;"
-                  class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate active | js-header-link"
+                  class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate active | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
@@ -344,9 +344,8 @@
                 </a>
               </li>
 
-              <div
-              style="color: white;"
-                  class="button overflow-hidden mr-1 | js-button js-filter-projects"
+              <div              
+                  class="button text-white overflow-hidden mr-1 | js-button js-filter-projects"
                 >
                   Collection
 
@@ -369,9 +368,8 @@
                 class="nav__item relative mr-1 nav__item--dropdown | js-nav-item"
               >
                 <a
-                  href="/projects/index.html"
-                  style="color: white;"
-                  class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
+                  href="aboutus.html"                 
+                  class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
@@ -447,9 +445,8 @@
               </li>
               <li class="nav__item relative | js-nav-item">
                 <a
-                  href="/contact/index.html"
-                  style="color: white;"
-                  class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
+                  href="contact.html"                 
+                  class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
@@ -470,8 +467,8 @@
         >
          <a
             href="/"
-            style="margin-right: 10px; color: white;"
-            class="link link--menu d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
+            style="margin-right: 10px;"
+            class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
             data-header-link
             data-cursor="link"
             data-cursor-leave="onLinksLeave"
@@ -481,9 +478,8 @@
           </a>      
 
           <a
-            href="/"
-            style="color: white;"
-            class="link link--menu d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
+            href="/"            
+            class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
             data-header-link
             data-cursor="link"
             data-cursor-leave="onLinksLeave"
@@ -575,7 +571,7 @@
                     
                     <li role="none" class="mt-0.5">
                       <a
-                       href="/projects/index.html"
+                       href="aboutus.html"
                         class="link link--menu d-inline-block t-lh-1.1 overflow-hidden t-white js-mobile-link | js-header-link"
                         data-header-link
                         role="menuitem"
@@ -590,7 +586,7 @@
                     </li>
                     <li role="none" class="mt-0.5">
                       <a
-                        href="/contact/index.html"
+                        href="contact.html"
                         class="link link--menu d-inline-block t-lh-1.1 overflow-hidden t-white js-mobile-link | js-header-link"
                         data-header-link
                         role="menuitem"
@@ -2846,49 +2842,22 @@
             <div id="accordion-sector" class="overflow-hidden d-none">
               <div class="p-1 p-2@sm d-flex flex-column items-end">
                 <div class="w-1/1">
-                  <div class="grid w-1/1 w-4/6@sm">
-                    <!-- <label
-                      for="sector-all"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-all"
-                        type="checkbox"
-                        checked
-                        class="js-project-filters:checkbox"
-                        value="all"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      All
-                    </label> -->
+                  <div class="grid w-1/1 w-4/6@sm">                   
                     <label
                       for="sector-High-Rise"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-High-Rise"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="High-Rise"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="K - NIMOHAY RAGHAV"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="wp-content/uploads/axoli/K-Nimohay Raghav-Preview-01.jpg"/>
                       </span>
                       K - NIMOHAY RAGHAV
-                    </label>
+                    </label>                                   
                     <label
                       for="sector-High-Rise"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-High-Rise"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="High-Rise"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="K - NIMOHAY ISHVARA"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="wp-content/uploads/axoli/K-Nimohay Ishvara - Preview 01.jpg"/>
                       </span>
@@ -2896,31 +2865,19 @@
                     </label>
                     <label
                       for="sector-High-Rise"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-High-Rise"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="High-Rise"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="R - ANGIRA RAGHAV"
+                    >                     
                       <span class="form-checkbox__box">
                          <img src="wp-content/uploads/axoli/R-ANGIRA RAGHAV - Preview 01.jpg"/>
                       </span>
                       R - ANGIRA RAGHAV
                     </label>
-                    <label
+                    <!-- <label
                       for="sector-Cultural"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Cultural"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Cultural"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="SUBWAY"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-1.png"/>
                       </span>
@@ -2928,15 +2885,9 @@
                     </label>                    
                     <label
                       for="sector-High-Rise"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-High-Rise"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="High-Rise"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="MORROCON"
+                    >                      
                       <span class="form-checkbox__box">
                          <img src="/wp-content/uploads/axoli/manf-img-2.png"/>
                       </span>
@@ -2944,31 +2895,19 @@
                     </label>
                     <label
                       for="sector-Hospitality"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Hospitality"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Hospitality"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="ELEVATION"
+                    >                      
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-3.png"/>
                       </span>
                       ELEVATION
-                    </label>
+                    </label> -->
                     <label
                       for="sector-Leisure"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Leisure"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Leisure"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="KITCHEN"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-5.png"/>
                       </span>
@@ -2976,15 +2915,9 @@
                     </label>
                     <label
                       for="sector-Mixed-Use"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Mixed-Use"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Mixed-Use"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="TEMPLE"
+                    >                      
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-6.png"/>
                       </span>
@@ -2992,15 +2925,9 @@
                     </label>
                     <label
                       for="sector-Office"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Office"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Office"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="CONCEPT"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-7.png"/>
                       </span>
@@ -3008,15 +2935,9 @@
                     </label>
                     <label
                       for="sector-Outdoor Retail"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Outdoor Retail"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Outdoor Retail"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="DAY-NIGHT"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-9.png"/>
                       </span>
@@ -3024,104 +2945,14 @@
                     </label>
                     <label
                       for="sector-Renovation"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="sector-Renovation"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Renovation"
-                        data-filter-type="sector"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="BATHROOM"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-10.png"/>
                       </span>
                       BATHROOM
-                    </label>
-                    <!-- <label
-                      for="sector-Residential"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Residential"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Residential"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Residential
-                    </label>
-                    <label
-                      for="sector-Shopping Mall"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Shopping Mall"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Shopping Mall"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Shopping Mall
-                    </label>
-                    <label
-                      for="sector-Showroom"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Showroom"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Showroom"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Showroom
-                    </label>
-                    <label
-                      for="sector-Sports"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Sports"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Sports"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Sports
-                    </label>
-                    <label
-                      for="sector-Store Design"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Store Design"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Store Design"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Store Design
-                    </label>
-                    <label
-                      for="sector-Transport"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="sector-Transport"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Transport"
-                        data-filter-type="sector"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Transport
-                    </label> -->
+                    </label>                    
                   </div>
                 </div>
               </div>
@@ -3180,126 +3011,37 @@
             <div id="accordion-scope" class="overflow-hidden d-none">
               <div class="p-1 p-2@sm d-flex flex-column items-end">
                 <div class="w-1/1">
-                  <div class="grid w-1/1 w-4/6@sm">
-                    <!-- <label
-                      for="scope-all"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="scope-all"
-                        type="checkbox"
-                        checked
-                        class="js-project-filters:checkbox"
-                        value="all"
-                        data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      All
-                    </label> -->
+                  <div class="grid w-1/1 w-4/6@sm">                    
                     <label
                       for="scope-Architecture"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="scope-Architecture"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Architecture"
-                        data-filter-type="scope"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="30X30"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-11.png"/>
                       </span>
-                      30x30
+                      30X30
                     </label>
                     <label
                       for="scope-Façade"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="scope-Façade"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Façade"
-                        data-filter-type="scope"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="30X45"
+                    >                     
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-12.png"/>
                       </span>
-                      30x45
+                      30X45
                     </label>
                     <label
                       for="scope-Interiors"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <!-- <input
-                        id="scope-Interiors"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Interiors"
-                        data-filter-type="scope"
-                      /> -->
+                      class="form-checkbox mb-1 w-1/2 w-1/3@sm | js-project-label"
+                      data-category="30X60"
+                    >                      
                       <span class="form-checkbox__box">
                         <img src="/wp-content/uploads/axoli/manf-img-13.png"/>
                       </span>
-                      30x60
-                    </label>
-                    <!-- <label
-                      for="scope-Landscape"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="scope-Landscape"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Landscape"
-                        data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Landscape
-                    </label>
-                    <label
-                      for="scope-Masterplan"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="scope-Masterplan"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Masterplan"
-                        data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Masterplan
-                    </label>
-                    <label
-                      for="scope-Model Making"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="scope-Model Making"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Model Making"
-                        data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Model Making
-                    </label>
-                    <label
-                      for="scope-Wayfinding"
-                      class="form-checkbox mb-1 w-1/2 w-1/3@sm"
-                    >
-                      <input
-                        id="scope-Wayfinding"
-                        type="checkbox"
-                        class="js-project-filters:checkbox"
-                        value="Wayfinding"
-                        data-filter-type="scope"
-                      />
-                      <span class="form-checkbox__box"></span>
-                      Wayfinding
-                    </label> -->
+                      30X60
+                    </label>                   
                   </div>
                 </div>
               </div>
@@ -4995,11 +4737,7 @@
         </button>
       </div>
       <button class="ring-back-button | js-ring-back-button">
-        <svg aria-hidden="true">
-          <use
-            xlink:href="/wp-content/themes/clou/public/images/svgsprite.svg#arrow"
-          ></use>
-        </svg>
+       <img  src="/wp-content/uploads/axoli/arrow.png" class="arrow-img"/>
       </button>
     </div>
     <canvas class="gl-canvas" style="display: none"></canvas>

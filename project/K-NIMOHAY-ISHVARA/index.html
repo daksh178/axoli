@@ -252,7 +252,7 @@
       class="header fixed z-50 top left w-1/1 d-none pointer-events-none | js-header"
     >
       <div
-        class="header__inner bg-white d-flex justify-between items-center h-1/1 w-1/1 px-0.5 px-1@sm px-1.5@md"
+        class="header__inner d-flex justify-between items-center h-1/1 w-1/1 px-0.5 px-1@sm px-1.5@md"
       >
         <div class="d-flex items-center pointer-events-auto">
           <div>
@@ -262,7 +262,7 @@
               data-cursor="link"
               data-cursor-leave="onLinksLeave"
             >
-              <svg
+              <!-- <svg
                 class="header__logo d-block | js-header:logo"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 800 200"
@@ -280,7 +280,11 @@
                   <tspan fill="black">XOL</tspan>
                   <tspan fill="#EA5603">I</tspan>
                 </text>
-              </svg>
+              </svg> -->
+
+              <div class="logo-axoli">
+                <img src="/wp-content/uploads/axoli/Axoli Logo.png" />
+              </div>
 
               <svg
                 style="display: none"
@@ -334,7 +338,7 @@
               <li class="nav__item relative mr-1 | js-nav-item">
                 <a
                   href="/index.html"
-                  class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
+                  class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
@@ -350,8 +354,8 @@
                 class="nav__item relative mr-1 nav__item--dropdown | js-nav-item"
               >
                 <a
-                  href="/projects/index.html"
-                  class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
+                  href="/aboutus.html"
+                  class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
@@ -427,8 +431,8 @@
               </li>
               <li class="nav__item relative | js-nav-item">
                 <a
-                  href="../../contact/index.html"
-                  class="link link--menu d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
+                  href="/contact.html"
+                  class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden d-block | js-header-animate | js-header-link"
                   data-header-link
                   role="menuitem"
                   data-cursor="link"
@@ -449,7 +453,7 @@
           <a
             href="/"
             style="margin-right: 10px"
-            class="link link--menu d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
+            class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
             data-header-link
             data-cursor="link"
             data-cursor-leave="onLinksLeave"
@@ -460,7 +464,7 @@
 
           <a
             href="index.html"
-            class="link link--menu d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
+            class="link link--menu text-white d-inline-block t-lh-1.1 overflow-hidden js-header-lang-animate js-en-link active | js-header-link"
             data-header-link
             data-cursor="link"
             data-cursor-leave="onLinksLeave"
@@ -550,7 +554,7 @@
                     </li>
                     <li role="none" class="mt-0.5">
                       <a
-                        href="/projects/index.html"
+                        href="/aboutus.html"
                         class="link link--menu d-inline-block t-lh-1.1 overflow-hidden t-white js-mobile-link | js-header-link"
                         data-header-link
                         role="menuitem"
@@ -565,7 +569,7 @@
                     </li>
                     <li role="none" class="mt-0.5">
                       <a
-                        href="/contact/index.html"
+                        href="/contact.html"
                         class="link link--menu d-inline-block t-lh-1.1 overflow-hidden t-white js-mobile-link | js-header-link"
                         data-header-link
                         role="menuitem"
@@ -901,38 +905,37 @@
       </div>
     </header>
 
-    <!-- Quotation Popup -->
-    <div id="quotation-popup" class="popup">
-      <div class="popup-content">
-        <span class="close-btn">&times;</span>
-        <h3>Get Quotation</h3>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Sample Popup -->
-    <div id="sample-popup" class="popup">
-      <div class="popup-content">
-        <span class="close-btn">&times;</span>
-        <h3>Get Sample</h3>
-        <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Sample Request"></textarea>
-          <button type="submit">Request Sample</button>
-        </form>
-      </div>
-    </div>
-
     <div asscroll-container>
       <div asscroll>
         <div data-taxi>
           <div data-taxi-view="project" class="container-fluid overflow-hidden">
+            <!-- Quotation Popup -->
+            <div id="quotation-popup" class="popup">
+              <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h3>Get Quotation</h3>
+                <form>
+                  <input type="text" placeholder="Your Name" required />
+                  <input type="email" placeholder="Email" required />
+                  <textarea placeholder="Message"></textarea>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- Sample Popup -->
+            <div id="sample-popup" class="popup">
+              <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h3>Get Sample</h3>
+                <form>
+                  <input type="text" placeholder="Your Name" required />
+                  <input type="email" placeholder="Email" required />
+                  <textarea placeholder="Sample Request"></textarea>
+                  <button type="submit">Request Sample</button>
+                </form>
+              </div>
+            </div>
+
             <div class="grid">
               <aside class="w-1/1@touch w-8/24@md js-sticky">
                 <div class="js-sticky:pin">
@@ -953,7 +956,6 @@
                         + Get sample
                       </h4>
                     </div>
-
                     <!-- <div class="mb-1.5@md">
                       <a
                         class="button t-30 t-60@md t-ls-3 t-ls-5@md t-lh-1.1 js-intro-button overflow-hidden | js-button"
@@ -2890,7 +2892,7 @@
                       </li>
                       <li role="none">
                         <a
-                          href="/projects/index.html"
+                          href="/aboutus.html"
                           class="link d-inline-block overflow-hidden footer__link mb-1 | js-link"
                           role="menuitem"
                         >
@@ -2902,7 +2904,7 @@
                       </li>
                       <li role="none">
                         <a
-                          href="/contact/index.html"
+                          href="/contact.html"
                           class="link d-inline-block overflow-hidden footer__link mb-1 | js-link"
                           role="menuitem"
                         >
@@ -5185,13 +5187,13 @@
           </span>
         </button>
       </div>
-      <button class="ring-back-button | js-ring-back-button">
+      <!-- <button class="ring-back-button | js-ring-back-button">
         <svg aria-hidden="true">
           <use
             xlink:href="/wp-content/themes/clou/public/images/svgsprite.svg#arrow"
           ></use>
         </svg>
-      </button>
+      </button> -->
     </div>
     <canvas class="gl-canvas" style="display: none"></canvas>
     <script id="theme-scripts-js-extra">
@@ -5207,8 +5209,7 @@
       src="../../wp-content/themes/clou/public/scripts/theme.js"
       id="theme-scripts-js"
     ></script>
-
-    <script>
+    <!-- <script>
       document.addEventListener("click", (e) => {
         const openBtn = e.target.closest(".open-popup");
         if (openBtn) {
@@ -5232,7 +5233,7 @@
           }
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>
 <!-- WP Fastest Cache file was created in 0.8258261680603 seconds, on 01-08-25 17:45:53 --><!-- via php -->
