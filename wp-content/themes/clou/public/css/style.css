@@ -837,7 +837,7 @@ rect:not(.header .burger__bg) {
 }
 .image__inner {
   bottom: 0;
-  height: 110%;
+  height: 100%;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -851,6 +851,8 @@ rect:not(.header .burger__bg) {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
+  border: 3px solid #ea5603;
+  transform: none !important;
 }
 .image--native .image__inner {
   height: 100%;
@@ -2040,7 +2042,6 @@ rect:not(.header .burger__bg) {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border: 3px solid #ea5603;
 }
 
 .project-preview__title {
