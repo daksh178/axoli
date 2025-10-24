@@ -1,4 +1,1 @@
-# Ignore specific video files
-/wp-content/uploads/axoli/C8918.MP4
-/wp-content/uploads/axoli/C8919.MP4
-/wp-content/uploads/axoli/C8934.MP4
+/wp-content/uploads/axoli/*.MP4
