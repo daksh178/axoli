@@ -12785,14 +12785,16 @@ rect:not(.header .burger__bg) {
 
 .get-qut-smaple {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
-.get-qut-smaple h3 {
+.get-qut-smaple h4 {
   cursor: pointer;
-  /* color: #0077ff; */
   text-decoration: underline;
+  text-decoration-color: #d94e00;
 }
 
 /* Popup base */
@@ -12821,7 +12823,11 @@ rect:not(.header .burger__bg) {
 .popup-content form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
+}
+
+.popup-content label {
+  text-align: left;
 }
 
 .popup-content input,
@@ -12859,4 +12865,88 @@ rect:not(.header .burger__bg) {
 .arrow-img {
   width: 50%;
   height: 50%;
+}
+
+.form-checkbox__box img {
+  height: 30px;
+  width: 40px;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  z-index: 10000;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.switch-text {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #d94e00;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.switch-text a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

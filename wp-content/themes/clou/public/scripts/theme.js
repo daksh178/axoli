@@ -54962,7 +54962,10 @@ document.addEventListener("click", (e) => {
   if (openBtn) {
     const popupId = openBtn.getAttribute("data-popup") + "-popup";
     const popup = document.getElementById(popupId);
-    if (popup) popup.style.display = "flex";
+    if (popup) {
+      popup.style.display = "flex";
+      window.scrollTo({ top: 0, behavior: "smooth" }); // 👈 scroll to top smoothly
+    }
   }
 
   // CLOSE popup
